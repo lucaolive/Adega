@@ -5,12 +5,18 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListarVinhosComponent } from './listar-vinhos/listar-vinhos.component';
+import { EditarVinhoComponent } from './editar-vinho/editar-vinho.component';
 
-const appRoutes: Routes = []
+const appRoutes: Routes = [
+  {path: `vinhos`, component: ListarVinhosComponent},
+]
 
 @NgModule({
   declarations: [
     AppComponent,
+    ListarVinhosComponent,
+    EditarVinhoComponent,
   ],
   imports: [
     BrowserModule,
