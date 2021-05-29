@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,7 +9,8 @@ import { ListarVinhosComponent } from './listar-vinhos/listar-vinhos.component';
 import { EditarVinhoComponent } from './editar-vinho/editar-vinho.component';
 
 const appRoutes: Routes = [
-  {path: `vinhos`, component: ListarVinhosComponent},
+  { path: `vinhos`, component: ListarVinhosComponent},
+  { path: `vinhos/:id`, component: EditarVinhoComponent }
 ]
 
 @NgModule({
